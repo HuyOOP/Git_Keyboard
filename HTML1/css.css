@@ -1,0 +1,116 @@
+body {
+    width:100%;
+}
+
+#feature {
+    width:100%;
+    height:125px;
+    background-color : red;
+    justify-content:space-evenly;
+    display: flex;
+    justify-content: left;
+}
+
+#logo {
+    width:30%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
+
+.loogoo {
+    width:12%;
+    display: flex;
+    justify-items:left;
+}
+
+.danhmuc-xemgia {
+    width:28%;
+    color:white;
+    border: 2px solid gray;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#search {
+    width:900px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#nearing {
+    width:40%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:white;
+}
+
+#nearing > call {
+    border:1px solid black;
+
+}
+
+#nearing > near-store {
+    border:1px solid black;
+
+}
+
+#nearing > search-bill {
+    border:1px solid black;
+
+}
+
+#nearing > store {
+    border:1px solid black;
+
+}
+
+#nearing > login {
+    border:1px solid black;
+
+}
+#properties {
+    width:100%;
+    height:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    justify-items: left;
+    border: 1px solid black;
+
+}
+
+#goods {
+    width:100%;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#above-list {
+    width:100%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border: 1px solid black;
+}
+
+#bottom-list {
+    width:100%;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border: 1px solid black;
+}
+
+
