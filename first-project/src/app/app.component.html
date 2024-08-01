@@ -1,0 +1,47 @@
+<h1 id="title">
+  Hello World!
+</h1>
+
+<button (click)="startGame()">Start Game </button>
+<button (click)="changeWord()"> Change Word</button>
+<h1>{{time}}</h1>
+<h1>{{word}}</h1>
+<h1>{{point}}</h1>
+
+
+
+<div id="container">
+  @for(row of buttons; track $index) { @if($index == 0) {
+    <div id="top">
+      @for(letters of row.top; track $index) {
+        <button>{{ letters }}</button>
+      }
+    </div>
+  } @else if($index == 1) {
+    <div id="middle">
+      @for(letters of row.middle; track $index) {
+        <button>{{ letters }}</button>
+      }
+    </div>
+  }@else{
+    <div id="bottom">
+      @for(letters of row.bottom; track $index) {
+        <button>{{ letters }}</button>
+      }
+    </div>
+  }
+  }
+</div>
+
+<input type="text" [(ngModel)]="input">
+
+
+<div>{{input}}</div>
+<h2>{{randomWord}}</h2>
+
+@if(time==0) {
+  <h2>Hết giờ chơi rồi nhóc kon</h2>
+  <h2>Your score is : {{point}}</h2>
+} @else {
+  <h2>Mày đang chơi game đó</h2>
+}
